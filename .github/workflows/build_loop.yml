@@ -51,7 +51,13 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
-      
+
+          # Loop: DiaHBS-patch-1: Endre karbotider
+          curl https://github.com/DiaHBS/Loop/commit/cf82908994d98fbee74961aea55d2bb35d4e616e.patch | git apply -v --directory=Loop
+
+          # LoopKit: DiaHBS-patch-1: Endre Lyumjev tider
+          curl https://github.com/DiaHBS/LoopKit/commit/018e2aeac7c280647f2540a7219ae38c9869622c.patch | git apply -v --directory=LoopKit
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: find /usr/local/lib/ruby/gems -name table_printer.rb | xargs sed -i "" "/puts(Terminal::Table.new(params))/d"
