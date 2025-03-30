@@ -290,7 +290,10 @@ jobs:
           meal_days \
           2002 \
           basal_lock \
-          live_activity
+          live_activity \
+          negative_insulin \
+          bolus_display \
+          g7_scan
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
