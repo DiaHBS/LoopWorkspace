@@ -197,12 +197,12 @@ jobs:
           # Submodule Loop patches:
           # Template for customizing submodule Loop (changes Loop app name to "CustomLoop")
           # Remove the "#" sign from the beginning of the line below to activate:
-          curl https://github.com/DiaHBS/Loop/commit/893df32d6e15a4dfa5f89abf0be6908baf3f7d20.patch | git apply --directory=Loop -v --whitespace=fix
+          # curl https://github.com/DiaHBS/Loop/commit/893df32d6e15a4dfa5f89abf0be6908baf3f7d20.patch | git apply --directory=Loop -v --whitespace=fix
 
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
-          curl https://github.com/DiaHBS/LoopKit/commit/018e2aeac7c280647f2540a7219ae38c9869622c.patch | git apply --directory=LoopKit -v --whitespace=fix
+          # curl https://github.com/DiaHBS/LoopKit/commit/018e2aeac7c280647f2540a7219ae38c9869622c.patch | git apply --directory=LoopKit -v --whitespace=fix
 
           # Submodule xxxxx patches:
 
@@ -220,7 +220,6 @@ jobs:
           low_carb_limit \
           now_line \
           lnl_icon \
-          watch_title \
           meal_days \
           2002 \
           basal_lock \
